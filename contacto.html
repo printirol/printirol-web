@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Printirol</title>
+  <meta name="description" content="Escribinos a hola@printirol.com. Te ayudamos a lanzar tu marca con print on demand, integrar tu Tiendanube o resolver dudas sobre pedidos.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=10">
+</head>
+<body data-page="contacto">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow reveal"><span class="dot">HOLA</span> Estamos para ayudarte</span>
+        <h1 class="display reveal" style="--delay:.05s">Hablemos</h1>
+        <p class="lead reveal" style="--delay:.1s">
+          ¿Tenés dudas sobre cómo empezar, la integración con Tiendanube o un pedido? Escribinos y te respondemos a la brevedad.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-sm" style="padding-top:8px">
+      <div class="container contact-grid">
+        <aside class="contact-info">
+          <a class="contact-item reveal" href="mailto:hola@printirol.com">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+            <div>
+              <h3>Email</h3>
+              <p>Respondemos todas las consultas</p>
+              <p class="value">hola@printirol.com</p>
+            </div>
+          </a>
+          <a class="contact-item reveal" style="--delay:.05s" data-app="tiendanube" href="#">
+            <div class="icon-tile" style="background:oklch(93.2% 0.032 255.585)"><img src="img/tiendanube.png" alt="" style="width:30px"></div>
+            <div>
+              <h3>App en Tiendanube</h3>
+              <p>Instalá Printirol en tu tienda</p>
+              <p class="value">Ver en la Tienda de Aplicaciones</p>
+            </div>
+          </a>
+          <a class="contact-item reveal" style="--delay:.1s" data-app="register" href="#">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            <div>
+              <h3>¿Ya querés empezar?</h3>
+              <p>Creá tu cuenta gratis en la plataforma</p>
+              <p class="value">app.printirol.com</p>
+            </div>
+          </a>
+          <div class="contact-item reveal" style="--delay:.15s">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <div>
+              <h3>Horario de atención</h3>
+              <p>Lunes a viernes de 9 a 18 h</p>
+              <p class="value">Argentina (GMT-3)</p>
+            </div>
+          </div>
+        </aside>
+
+        <form class="contact-form reveal" id="contact-form" novalidate style="--delay:.08s">
+          <h2>Envianos tu consulta</h2>
+          <p>Completá el formulario y te respondemos por email.</p>
+
+          <div class="form-grid">
+            <div class="field full">
+              <span style="font-size:15px;font-weight:500">Motivo</span>
+              <div class="reasons" role="radiogroup" aria-label="Motivo de la consulta">
+                <label><input type="radio" name="motivo" value="Quiero empezar a vender" checked><span class="chip">Quiero empezar</span></label>
+                <label><input type="radio" name="motivo" value="Integración Tiendanube"><span class="chip">Tiendanube</span></label>
+                <label><input type="radio" name="motivo" value="Consulta sobre un pedido"><span class="chip">Un pedido</span></label>
+                <label><input type="radio" name="motivo" value="Mayorista"><span class="chip">Mayorista / empresas</span></label>
+                <label><input type="radio" name="motivo" value="Otro"><span class="chip">Otro</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input class="input" id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono <span class="muted" style="font-weight:400">(opcional)</span></label>
+              <input class="input" id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="11 1234 5678">
+            </div>
+            <div class="field">
+              <label for="tienda">Tienda o marca <span class="muted" style="font-weight:400">(opcional)</span></label>
+              <input class="input" id="tienda" name="tienda" type="text" placeholder="mitienda.com.ar">
+            </div>
+            <div class="field full">
+              <label for="mensaje">Mensaje</label>
+              <textarea class="textarea" id="mensaje" name="mensaje" placeholder="Contanos en qué te podemos ayudar" required></textarea>
+            </div>
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+            <div class="full">
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Enviar mensaje
+                <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="alert alert-success" id="form-success" role="status">
+            ¡Gracias! Recibimos tu mensaje y te vamos a responder a la brevedad.
+          </div>
+          <div class="alert alert-error" id="form-error" role="alert">
+            No pudimos enviar el formulario. <a href="mailto:hola@printirol.com">Hacé clic acá para enviarlo desde tu email</a>.
+          </div>
+          <p class="form-legal">Tus datos se usan solo para responder tu consulta. Ver <a href="https://printirol.com/politica-de-privacidad/" style="text-decoration:underline">política de privacidad</a>.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-final reveal">
+          <img class="drops" src="img/icon.png" alt="">
+          <h2 class="h2">¿Preferís probar directamente?</h2>
+          <p>Crear tu cuenta es gratis y no necesitás tarjeta.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-lg" data-app="register" href="#">Empezá a vender
+              <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
+            </a>
+            <a class="btn btn-sober btn-lg" href="print-on-demand.html">Cómo funciona</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/data.js?v=10"></script>
+  <script src="js/main.js?v=10"></script>
+</body>
+</html>
