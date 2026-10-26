@@ -32,4 +32,20 @@ for (const dir of SOURCES) {
   }
 }
 
+// Logos: se muestran chicos, alcanza con 4x su alto en pantalla.
+const LOGOS = ['oca.png', 'tiendanube.png', 'mercado-pago.png', 'mercado-libre.png', 'logo.png'];
+await mkdir(path.join(OUT, 'logos'), { recursive: true });
+for (const file of LOGOS) {
+  const src = path.join('img', file);
+  const dest = path.join(OUT, 'logos', file);
+  await sharp(src)
+    .resize({ height: 160, withoutEnlargement: true })
+    .png({ palette: true, effort: 10 })
+    .toFile(dest);
+  const [a, b] = await Promise.all([stat(src), stat(dest)]);
+  before += a.size;
+  after += b.size;
+  console.log(`${dest}  ${Math.round(a.size / 1024)} KB -> ${Math.round(b.size / 1024)} KB`);
+}
+
 console.log(`\nTotal: ${(before / 1048576).toFixed(1)} MB -> ${(after / 1048576).toFixed(1)} MB`);

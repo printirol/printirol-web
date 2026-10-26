@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Producto | Printirol</title>
   <meta name="theme-color" content="#ffffff">
+  <link rel="preload" as="image" href="media/logos/logo.png">
   <link rel="icon" type="image/png" href="img/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="css/styles.css?v=31">
+  <link rel="stylesheet" href="css/styles.css?v=44">
 </head>
 <body data-page="catalogo">
   <div id="site-header"></div>
@@ -20,6 +21,18 @@
     <section class="hero product-hero">
       <div class="container split" data-product-detail></div>
     </section>
+
+    <div class="marquee marquee-dark" data-marquee data-speed="45" aria-label="Precios y envíos">
+      <ul class="marquee-track">
+        <li><svg><use href="#i-gift"/></svg>Registrarte es gratis</li>
+        <li><svg><use href="#i-box"/></svg>Sin compras mínimas</li>
+        <li><svg><use href="#i-card"/></svg>Pagás cuando vendés</li>
+        <li><svg><use href="#i-tag"/></svg>Vos ponés el precio</li>
+        <li><svg><use href="#i-truck"/></svg>Un solo envío por pedido</li>
+        <li><svg><use href="#i-star"/></svg>20% off en tu muestra</li>
+        <li><svg><use href="#i-coin"/></svg>Precios en pesos</li>
+      </ul>
+    </div>
 
     <section class="section">
       <div class="container">
@@ -33,6 +46,6 @@
 
   <div id="site-footer"></div>
 
-  <script src="js/main.js?v=31"></script>
+  <script src="js/main.js?v=44"></script>
 </body>
 </html>

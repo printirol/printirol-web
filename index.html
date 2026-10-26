@@ -6,13 +6,14 @@
   <title>Printirol | Print on demand en Argentina</title>
   <meta name="description" content="Diseñá productos con tu marca y vendelos sin stock. Printirol produce y envía por vos a todo el país. Integrado con Tiendanube.">
   <meta name="theme-color" content="#ffffff">
+  <link rel="preload" as="image" href="media/logos/logo.png">
   <link rel="icon" type="image/png" href="img/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="css/styles.css?v=31">
+  <link rel="stylesheet" href="css/styles.css?v=44">
 </head>
 <body data-page="inicio">
 
@@ -30,7 +31,7 @@
         </div>
         <ul class="hero-checks">
           <li><svg><use href="#i-check"/></svg>Registrarte no cuesta nada</li>
-          <li><svg><use href="#i-check"/></svg>App disponible en <img src="img/tiendanube.png" alt="" class="tn-mini">Tiendanube</li>
+          <li><svg><use href="#i-check"/></svg>App disponible en <img src="media/logos/tiendanube.png" alt="" class="tn-mini">Tiendanube</li>
           <li><svg><use href="#i-check"/></svg>Envíos con OCA a todo el país</li>
         </ul>
       </div>
@@ -60,6 +61,16 @@
           <figure class="g-col g-tall"><img src="media/fotos/remera-ViaLyon.webp" alt="Etiqueta estampada en el cuello de una remera" decoding="async"></figure>
           <figure class="g-col g-tall"><img src="media/fotos/WhatsApp-Image-2026-04-20-at-21.40.09-1.webp" alt="Gorra negra con texto personalizado" decoding="async"></figure>
         </div>
+      </div>
+    </section>
+
+    <!-- 2b. Cifras -->
+    <section class="stats-section" aria-label="Printirol en números">
+      <div class="container stats">
+        <div class="stat"><strong>+1.500</strong><span>tiendas activas</span></div>
+        <div class="stat"><strong>+1.700</strong><span>productos enviados</span></div>
+        <div class="stat"><strong>4,8★</strong><span>valoraciones reales</span></div>
+        <div class="stat"><strong>100%</strong><span>producido en Argentina</span></div>
       </div>
     </section>
 
@@ -212,7 +223,7 @@
     <section class="section" id="tiendanube">
       <div class="container split">
         <div class="split-copy">
-          <span class="tn-brand"><img src="img/tiendanube.png" alt="">Tiendanube</span>
+          <span class="tn-brand"><img src="media/logos/tiendanube.png" alt="">Tiendanube</span>
           <h2 class="section-title">¿Ya tenés tu Tiendanube? <span class="hl">Sumale productos propios</span></h2>
           <p class="section-lead">Instalás la app de Printirol en tu tienda y empezás a ofrecer productos con tu diseño, sin cambiar de plataforma y sin cargar inventario.</p>
           <ul class="check-list">
@@ -335,6 +346,33 @@
       </div>
     </section>
 
+    <!-- 10b. Testimonios -->
+    <section class="section section-soft" id="testimonios">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Lo que dicen <span class="hl">nuestras tiendas</span></h2>
+          <p class="section-lead">Marcas y emprendimientos que ya venden con Printirol.</p>
+        </div>
+        <div class="testimonials">
+          <figure class="testimonial">
+            <div class="stars" aria-label="5 de 5 estrellas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+            <blockquote>“Simple y fácil de usar, velocidad para entregar los productos, buena calidad y amplio catálogo.”</blockquote>
+            <figcaption>Paula<span>Nuestro Rock</span></figcaption>
+          </figure>
+          <figure class="testimonial">
+            <div class="stars" aria-label="5 de 5 estrellas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+            <blockquote>“Empecé mi negocio de remeras personalizadas para empresas gracias a Printirol.”</blockquote>
+            <figcaption>Mariano<span>Sublimarte</span></figcaption>
+          </figure>
+          <figure class="testimonial">
+            <div class="stars" aria-label="5 de 5 estrellas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+            <blockquote>“Siempre vendí print on demand fuera de Argentina. Hoy vendo en Argentina gracias a Printirol.”</blockquote>
+            <figcaption>Maga<span>Magalactica</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <!-- 11. Empezá a vender hoy -->
     <section class="cta-section">
       <div class="container">
@@ -399,6 +437,14 @@
             <summary><svg><use href="#i-plus"/></svg>¿Cómo sigo el estado de mis pedidos?</summary>
             <p>Desde tu panel ves cada pedido como Borrador, En producción o Enviado. Cuando se despacha te llega un mail, y si vino de Tiendanube el seguimiento se carga en tu tienda.</p>
           </details>
+          <details name="faq" id="faq-alternativa">
+            <summary><svg><use href="#i-plus"/></svg>¿Printirol es una alternativa a Printful o Printify?</summary>
+            <p>Sí. Es el mismo modelo de impresión bajo demanda, pero producido y enviado desde Argentina: pagás en pesos, sin impuestos de importación ni envíos internacionales.</p>
+          </details>
+          <details name="faq" id="faq-stock">
+            <summary><svg><use href="#i-plus"/></svg>¿Tengo que manejar stock en mi tienda?</summary>
+            <p>No. Como cada producto se fabrica cuando se vende, se publica en Tiendanube sin control de stock y nunca aparece agotado.</p>
+          </details>
           <details name="faq" id="faq-archivos">
             <summary><svg><use href="#i-plus"/></svg>¿Qué archivos puedo subir?</summary>
             <p>Imágenes JPG, PNG, GIF o WEBP de hasta 20 MB. El editor te muestra la calidad de impresión según el tamaño que le des al diseño.</p>
@@ -411,6 +457,6 @@
   <div id="site-footer"></div>
 
 
-  <script src="js/main.js?v=31"></script>
+  <script src="js/main.js?v=44"></script>
 </body>
 </html>

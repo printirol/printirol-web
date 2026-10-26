@@ -9,7 +9,12 @@
   const MENU = [
     { page: 'inicio', label: 'Inicio', href: 'index.html' },
     { page: 'pod', label: 'Print on demand', href: 'print-on-demand.html' },
+    { page: 'como-funciona', label: 'Cómo funciona', href: 'como-funciona.html' },
     { page: 'catalogo', label: 'Catálogo', href: 'catalogo.html' },
+    { page: 'herramientas', label: 'Editor y herramientas', href: 'herramientas.html' },
+    { page: 'integraciones', label: 'Integraciones', href: 'integraciones.html' },
+    { page: 'precios', label: 'Precios y envíos', href: 'precios-y-envios.html' },
+    { page: 'ayuda', label: 'Ayuda', href: 'ayuda.html' },
     { page: 'contacto', label: 'Contacto', href: 'contacto.html' },
   ];
 
@@ -49,6 +54,8 @@
       <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
       <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
       <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
+      <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5 2.59 2.59 0 0 1 0-5.18c.27 0 .53.04.77.12V9.66a5.7 5.7 0 0 0-.77-.05 5.69 5.69 0 1 0 5.69 5.69V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.3 4.3 0 0 1-3.25-1.48z"/></symbol>
       <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
       </defs></svg>`
     );
@@ -63,7 +70,7 @@
           <div class="footer-brand">
             <a href="index.html" class="brand" aria-label="Printirol, ir al inicio">
               <img class="brand-icon" src="img/icon.png" alt="" width="32" height="32">
-              <img class="brand-word" src="img/logo.png" alt="Printirol" height="28">
+              <img class="brand-word" src="media/logos/logo.png" alt="Printirol" height="28">
             </a>
             <p>Plataforma de <span class="hl">print on demand</span> en Argentina. Diseñás productos con tu marca, los vendés donde quieras y nosotros los fabricamos y enviamos.</p>
             <a class="btn btn-primary" href="https://app.printirol.com/register">Empezá gratis</a>
@@ -71,7 +78,8 @@
             <div class="socials">
               <a href="https://www.instagram.com/printirol/" target="_blank" rel="noopener" aria-label="Instagram de Printirol"><svg><use href="#i-instagram"/></svg></a>
               <a href="https://www.youtube.com/@Printirol" target="_blank" rel="noopener" aria-label="YouTube de Printirol"><svg><use href="#i-youtube"/></svg></a>
-              <a href="https://www.tiendanube.com/tienda-aplicaciones-nube/printirol-pod" target="_blank" rel="noopener" aria-label="Printirol en Tiendanube"><img src="img/tiendanube.png" alt=""></a>
+              <a href="https://www.tiktok.com/@printirol" target="_blank" rel="noopener" aria-label="TikTok de Printirol"><svg class="ic-fill"><use href="#i-tiktok"/></svg></a>
+              <a href="https://www.tiendanube.com/tienda-aplicaciones-nube/printirol-pod" target="_blank" rel="noopener" aria-label="Printirol en Tiendanube"><img src="media/logos/tiendanube.png" alt=""></a>
             </div>
           </div>
           <nav class="footer-col" aria-label="Sitio">
@@ -79,22 +87,34 @@
             <a href="index.html">Inicio</a>
             <a href="print-on-demand.html">Print on demand</a>
             <a href="catalogo.html">Catálogo</a>
+            <a href="ayuda.html">Centro de ayuda</a>
             <a href="contacto.html">Contacto</a>
+          </nav>
+          <nav class="footer-col" aria-label="Cómo funciona">
+            <h3>Cómo funciona</h3>
+            <a href="como-funciona.html">Paso a paso</a>
+            <a href="herramientas.html">Editor y herramientas</a>
+            <a href="integraciones.html">Integraciones</a>
+            <a href="precios-y-envios.html">Precios y envíos</a>
+            <a href="index.html#calculadora">Calculá tu ganancia</a>
           </nav>
           <nav class="footer-col" aria-label="Plataforma">
             <h3>Plataforma</h3>
             <a href="https://app.printirol.com/register">Crear cuenta</a>
             <a href="https://app.printirol.com/login">Iniciar sesión</a>
-            <a href="index.html#calculadora">Calculá tu ganancia</a>
             <a href="https://www.tiendanube.com/tienda-aplicaciones-nube/printirol-pod" target="_blank" rel="noopener">App para Tiendanube</a>
-          </nav>
-          <nav class="footer-col" aria-label="Redes">
-            <h3>Redes</h3>
             <a href="https://www.instagram.com/printirol/" target="_blank" rel="noopener">Instagram</a>
             <a href="https://www.youtube.com/@Printirol" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.tiktok.com/@printirol" target="_blank" rel="noopener">TikTok</a>
           </nav>
         </div>
         <div class="container footer-bottom">
+          <nav class="footer-legal" aria-label="Legales">
+            <a href="terminos.html">Términos y condiciones</a>
+            <a href="privacidad.html">Política de privacidad</a>
+            <a href="politica-de-envios.html">Política de envíos</a>
+            <a href="cancelaciones.html">Cancelaciones y devoluciones</a>
+          </nav>
           <p>© <span data-year>2026</span> Printirol · Print on demand en Argentina</p>
         </div>
       </footer>`;
@@ -119,7 +139,7 @@
             </button>
             <a href="index.html" class="brand" aria-label="Printirol, ir al inicio">
               <img class="brand-icon" src="img/icon.png" alt="" width="32" height="32">
-              <img class="brand-word" src="img/logo.png" alt="Printirol" height="28">
+              <img class="brand-word" src="media/logos/logo.png" alt="Printirol" height="28">
             </a>
           </div>
           <form class="search header-search" role="search" data-search>
@@ -128,6 +148,9 @@
             <div class="search-results" id="search-results" role="listbox" hidden></div>
           </form>
           <div class="header-actions">
+            <button class="header-icon header-search-toggle" type="button" aria-label="Buscar" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.5-4.5"/></svg>
+            </button>
             <a class="header-login" href="${LINKS.login}" aria-label="Ingresar a la plataforma">
               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4.42 0-8 2.69-8 6v2h16v-2c0-3.31-3.58-6-8-6z"/></svg>
               <span>Iniciar sesión</span>
@@ -198,12 +221,48 @@
     }
   }
 
+  // Corre un intervalo solo mientras el elemento está en pantalla y la pestaña visible.
+  function visibleInterval(el, fn, ms) {
+    let timer = null;
+    let onScreen = false;
+    let stopped = false;
+    const sync = () => {
+      const run = onScreen && !stopped && !document.hidden;
+      if (run && !timer) timer = setInterval(fn, ms);
+      if (!run && timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+    };
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => {
+        onScreen = entry.isIntersecting;
+        sync();
+      }).observe(el);
+    } else {
+      onScreen = true;
+    }
+    document.addEventListener('visibilitychange', sync);
+    sync();
+    return {
+      stop() {
+        stopped = true;
+        sync();
+      },
+      restart() {
+        clearInterval(timer);
+        timer = null;
+        sync();
+      },
+    };
+  }
+
   function initSteps() {
     const root = $('[data-steps]');
     if (!root) return;
     const steps = $$('.step', root);
     let current = 0;
-    let timer = null;
+    let auto = null;
 
     const open = (index) => {
       current = index;
@@ -215,13 +274,13 @@
 
     steps.forEach((step, i) => {
       $('.step-head', step).addEventListener('click', () => {
-        clearInterval(timer);
+        if (auto) auto.stop();
         open(step.classList.contains('is-open') ? -1 : i);
       });
     });
 
     if (!reduceMotion) {
-      timer = setInterval(() => open((current + 1) % steps.length), 6000);
+      auto = visibleInterval(root, () => open((current + 1) % steps.length), 6000);
     }
   }
 
@@ -233,7 +292,6 @@
     const slides = $$('img', root);
     const dots = $('.slideshow-dots', root);
     let current = 0;
-    let timer = null;
 
     const buttons = slides.map((_, i) => {
       const b = document.createElement('button');
@@ -263,23 +321,22 @@
       buttons.forEach((b, i) => b.setAttribute('aria-selected', String(i === index)));
     }
 
+    const auto = reduceMotion ? null : visibleInterval(root, () => show((current + 1) % slides.length), 4000);
     function restart() {
-      clearInterval(timer);
-      if (!reduceMotion) timer = setInterval(() => show((current + 1) % slides.length), 4000);
+      if (auto) auto.restart();
     }
 
     show(0);
-    restart();
   }
 
   // Precios de referencia: el catálogo real vive en la plataforma.
   const CALC_PRODUCTS = [
-    { name: 'Remera', img: 'media/productos/remera.webp', cost: 9900 },
+    { name: 'Remera', img: 'media/productos/remera.webp', cost: 18600 },
     { name: 'Buzo', img: 'media/productos/buzo.webp', cost: 24900 },
     { name: 'Taza', img: 'media/productos/taza.webp', cost: 7500 },
     { name: 'Tote bag', img: 'media/productos/tote.webp', cost: 8900 },
-    { name: 'Gorra', img: 'media/productos/gorra.webp', cost: 9500 },
-    { name: 'Cuadro', img: 'media/productos/cuadro.webp', cost: 18900 },
+    { name: 'Gorra', img: 'media/productos/gorra.webp', cost: 7500 },
+    { name: 'Cuadro', img: 'media/productos/cuadro.webp', cost: 14900 },
   ];
 
   const money = new Intl.NumberFormat('es-AR', { maximumFractionDigits: 0 });
@@ -533,6 +590,33 @@
     { type: 'Print on demand', title: '¿Qué es el print on demand?', desc: 'Vendés productos personalizados que se imprimen recién cuando alguien los compra.', url: 'print-on-demand.html#que-es', kw: 'pod a pedido sin stock' },
     { type: 'Print on demand', title: '¿Stock propio o a pedido?', desc: 'Comparación entre comprar mercadería por adelantado y vender a pedido.', url: 'print-on-demand.html#stock-o-a-pedido', kw: 'stock inversion deposito comparacion' },
     { type: 'Print on demand', title: 'Tu tienda print on demand en 3 pasos', desc: 'Diseñás, publicás y nosotros producimos y despachamos.', url: 'print-on-demand.html#pasos', kw: 'pasos empezar' },
+    { type: 'Preguntas', title: '¿Printirol es una alternativa a Printful o Printify?', desc: 'El mismo modelo, producido en Argentina: en pesos y sin impuestos de importación.', url: 'index.html#faq-alternativa', kw: 'printful printify alternativa dolares importacion argentina' },
+    { type: 'Preguntas', title: '¿Tengo que manejar stock en mi tienda?', desc: 'No: se publica sin control de stock y nunca aparece agotado.', url: 'index.html#faq-stock', kw: 'stock inventario agotado tiendanube' },
+    { type: 'Inicio', title: 'Lo que dicen nuestras tiendas', desc: 'Testimonios de marcas que ya venden con Printirol.', url: 'index.html#testimonios', kw: 'opiniones testimonios reseñas clientes' },
+    { type: 'Cómo funciona', title: 'El recorrido de cada pedido', desc: 'Cuenta, producto, diseño, publicación, pago y envío.', url: 'como-funciona.html#recorrido', kw: 'pasos proceso pedido empezar' },
+    { type: 'Cómo funciona', title: 'Dos formas de vender', desc: 'Con tu Tiendanube o cargando pedidos de redes y Mercado Libre.', url: 'como-funciona.html#formas-de-vender', kw: 'pedido manual instagram whatsapp mercado libre borrador' },
+    { type: 'Cómo funciona', title: 'Estados de los pedidos', desc: 'Borrador, En producción y Enviado, todo en tu panel.', url: 'como-funciona.html#seguimiento', kw: 'estado seguimiento panel filtros' },
+    { type: 'Cómo funciona', title: 'Pedí tu muestra', desc: '20% off en la producción de hasta 3 productos.', url: 'como-funciona.html#muestras', kw: 'muestra descuento probar calidad' },
+    { type: 'Herramientas', title: 'Editor online', desc: 'Más de 500 tipografías, imágenes de hasta 20 MB y medidas en cm.', url: 'herramientas.html#editor', kw: 'editor diseño tipografias fuentes texto imagen capas cm' },
+    { type: 'Herramientas', title: 'Medidor de calidad', desc: 'Resolución real de tu imagen según el tamaño de impresión.', url: 'herramientas.html#calidad', kw: 'calidad ppi dpi resolucion pixelado nitido' },
+    { type: 'Herramientas', title: 'Mockups por color', desc: 'Fotos de cada color, descargables en ZIP.', url: 'herramientas.html#mockups', kw: 'mockup fotos zip descargar colores 3d taza' },
+    { type: 'Herramientas', title: 'Panel y calculadora', desc: 'Estadísticas, calculadora de rentabilidad y archivos de impresión.', url: 'herramientas.html#panel', kw: 'estadisticas dashboard rentabilidad margen archivos' },
+    { type: 'Integraciones', title: 'Tiendanube, Mercado Pago, OCA y Mercado Libre', desc: 'Publicás, cobrás y enviamos sin cargar datos a mano.', url: 'integraciones.html#conexiones', kw: 'integracion tiendanube mercado pago oca mercado libre' },
+    { type: 'Integraciones', title: 'Publicar en Tiendanube en 3 pasos', desc: 'Colores y talles, datos y precio.', url: 'integraciones.html#tiendanube', kw: 'publicar tiendanube variantes precio oculto' },
+    { type: 'Precios', title: 'Cómo se forma tu ganancia', desc: 'Precio base, tu precio de venta y la diferencia para vos.', url: 'precios-y-envios.html#precios', kw: 'precio costo ganancia comision gratis' },
+    { type: 'Precios', title: 'Precios de referencia', desc: 'Remeras desde $18.600, tazas y gorras desde $7.500, cuadros desde $14.900.', url: 'precios-y-envios.html#referencia', kw: 'precio cuanto sale remera taza gorra cuadro' },
+    { type: 'Envíos', title: 'Envíos con OCA', desc: 'A domicilio en todo el país, un solo envío por pedido.', url: 'precios-y-envios.html#envios', kw: 'envio oca correo domicilio costo mercado libre' },
+    { type: 'Ayuda', title: 'Centro de ayuda', desc: 'Respuestas sobre cuenta, editor, Tiendanube, pedidos, pagos y envíos.', url: 'ayuda.html', kw: 'ayuda soporte dudas problema tutorial' },
+    { type: 'Ayuda', title: 'Primeros pasos', desc: 'Crear la cuenta, verificar el mail y por dónde empezar.', url: 'ayuda.html#ayuda-primeros-pasos', kw: 'cuenta registro verificar mail empezar' },
+    { type: 'Ayuda', title: 'Ayuda con el editor', desc: 'Archivos, calidad, vistas, mockups y cambios en diseños.', url: 'ayuda.html#ayuda-editor', kw: 'editor archivo svg png calidad mockup editar' },
+    { type: 'Ayuda', title: 'Ayuda con Tiendanube', desc: 'Conectar, publicar, ventas, seguimiento y stock.', url: 'ayuda.html#ayuda-tiendanube', kw: 'tiendanube conectar publicar app' },
+    { type: 'Ayuda', title: 'Ayuda con pedidos y pagos', desc: 'Pedidos manuales, Mercado Pago, cancelaciones y estados.', url: 'ayuda.html#ayuda-pedidos', kw: 'pedido manual pago cancelar estado' },
+    { type: 'Ayuda', title: 'Olvidé mi contraseña', desc: 'Te llega un mail para crear una nueva.', url: 'ayuda.html#ayuda-cuenta', kw: 'contraseña clave password olvide cuenta mail' },
+    { type: 'Cómo funciona', title: 'Video tutorial de la plataforma', desc: 'En 5 minutos: configurá tu tienda y hacé tu primer pedido.', url: 'como-funciona.html#video', kw: 'video tutorial youtube ver' },
+    { type: 'Legales', title: 'Términos y condiciones', desc: 'Condiciones de uso del sitio y de los servicios de Printirol.', url: 'terminos.html', kw: 'terminos condiciones legal' },
+    { type: 'Legales', title: 'Política de privacidad', desc: 'Cómo tratamos y protegemos tus datos personales.', url: 'privacidad.html', kw: 'privacidad datos personales cookies' },
+    { type: 'Legales', title: 'Política de envíos', desc: 'Tiempos, costos por categoría, roturas y reclamos de envío.', url: 'politica-de-envios.html', kw: 'envio politica costos roturas reclamo' },
+    { type: 'Legales', title: 'Cancelaciones y devoluciones', desc: 'Cuándo se puede cancelar un pedido y cómo pedir una devolución.', url: 'cancelaciones.html', kw: 'cancelar devolucion reclamo cambio' },
     { type: 'Página', title: 'Catálogo', desc: 'Todos los productos que podés personalizar.', url: 'catalogo.html', kw: 'productos catalogo' },
     { type: 'Página', title: 'Contacto', desc: 'Escribinos por el formulario o a hola@printirol.com.', url: 'contacto.html', kw: 'contacto mail email consulta ayuda whatsapp' },
   ];
@@ -559,6 +643,28 @@
       .sort((a, b) => b.score - a.score)
       .slice(0, 7)
       .map((r) => r.item);
+  }
+
+  function initSearchToggle() {
+    const header = $('.site-header');
+    const toggle = $('.header-search-toggle');
+    if (!header || !toggle) return;
+    const input = $('.header-search input', header);
+    const setOpen = (open) => {
+      header.classList.toggle('is-search-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      if (open) input.focus();
+    };
+    toggle.addEventListener('click', () => setOpen(!header.classList.contains('is-search-open')));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && header.classList.contains('is-search-open')) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    document.addEventListener('click', (e) => {
+      if (header.classList.contains('is-search-open') && !header.contains(e.target)) setOpen(false);
+    });
   }
 
   function initSearch() {
@@ -645,6 +751,75 @@
     target.classList.add('is-found');
   }
 
+  function initHelpFilter() {
+    const input = $('[data-help-filter]');
+    const root = $('[data-help]');
+    if (!input || !root) return;
+    const groups = $$('.help-group', root);
+    const empty = $('[data-help-empty]', root);
+
+    input.addEventListener('input', () => {
+      const words = normalize(input.value).split(/\s+/).filter(Boolean);
+      let shown = 0;
+      groups.forEach((group) => {
+        let groupShown = 0;
+        $$('details', group).forEach((d) => {
+          const match = words.every((w) => normalize(d.textContent).includes(w));
+          d.hidden = !match;
+          d.open = words.length > 0 && match && groupShown === 0 && shown === 0;
+          if (match) groupShown++;
+        });
+        group.hidden = groupShown === 0;
+        shown += groupShown;
+      });
+      empty.hidden = shown > 0;
+    });
+  }
+
+  function initVideos() {
+    $$('[data-youtube]').forEach((poster) => {
+      poster.addEventListener('click', (e) => {
+        if (location.protocol === 'file:') return;
+        e.preventDefault();
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${poster.dataset.youtube}?autoplay=1&rel=0`;
+        iframe.title = poster.getAttribute('aria-label');
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        iframe.allowFullscreen = true;
+        poster.replaceWith(iframe);
+      });
+    });
+  }
+
+  // Carga la próxima página antes del clic para que la navegación sea instantánea.
+  function initPrefetch() {
+    if (location.protocol === 'file:') return;
+    if (HTMLScriptElement.supports && HTMLScriptElement.supports('speculationrules')) {
+      const rules = document.createElement('script');
+      rules.type = 'speculationrules';
+      rules.textContent = JSON.stringify({
+        prerender: [{ where: { href_matches: '/*.html*' }, eagerness: 'moderate' }],
+      });
+      document.head.appendChild(rules);
+      return;
+    }
+    const done = new Set();
+    const prefetch = (e) => {
+      const a = e.target.closest && e.target.closest('a[href]');
+      if (!a || a.origin !== location.origin || a.target === '_blank') return;
+      const url = a.href.split('#')[0];
+      if (url === location.href.split('#')[0] || done.has(url)) return;
+      done.add(url);
+      const link = document.createElement('link');
+      link.rel = 'prefetch';
+      link.href = url;
+      document.head.appendChild(link);
+    };
+    document.addEventListener('pointerover', prefetch, { passive: true });
+    document.addEventListener('touchstart', prefetch, { passive: true });
+  }
+
   function renderWhatsApp() {
     document.body.insertAdjacentHTML('beforeend', `
       <a class="wa-float" href="https://wa.me/5491123919842" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
@@ -695,6 +870,9 @@
   initCatalog();
   initHeader();
   initSearch();
+  initSearchToggle();
+  initHelpFilter();
+  initVideos();
   window.addEventListener('hashchange', revealHashTarget);
   if (window.location.hash) window.addEventListener('load', revealHashTarget, { once: true });
   // Se mide después de cargar Inter: con la fuente de reemplazo el ancho cambia y el loop salta.
@@ -703,5 +881,6 @@
   initSlideshows();
   initCalculator();
   initContactForm();
+  initPrefetch();
   $$('[data-year]').forEach((n) => (n.textContent = new Date().getFullYear()));
 })();
