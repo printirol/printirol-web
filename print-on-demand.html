@@ -3,280 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cómo funciona el print on demand | Printirol</title>
-  <meta name="description" content="Qué es el print on demand y cómo funciona Printirol: diseñás, conectás Tiendanube, cobrás con Mercado Pago y enviamos con OCA. Sin stock ni inversión.">
+  <title>Print on demand en Argentina | Printirol</title>
+  <meta name="description" content="Qué es el print on demand y cómo funciona con Printirol: vendé productos con tu marca sin comprar stock. Nosotros fabricamos y enviamos cada pedido.">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" type="image/png" href="img/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=10">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="css/styles.css?v=31">
 </head>
 <body data-page="pod">
   <div id="site-header"></div>
 
   <main>
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow reveal"><span class="dot">POD</span> Print on demand</span>
-        <h1 class="display reveal" style="--delay:.05s">Producimos <span class="underline-accent">solo lo que vendés</span></h1>
-        <p class="lead reveal" style="--delay:.1s">
-          Print on demand significa imprimir bajo demanda: cada producto se fabrica recién cuando tu cliente lo compra.
-          Sin stock, sin depósito y sin riesgo de que te quede mercadería sin vender.
-        </p>
-        <div class="hero-ctas reveal" style="--delay:.15s">
-          <a class="btn btn-primary btn-lg" data-app="register" href="#">Empezá a vender
-            <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-          </a>
-          <a class="btn btn-sober btn-lg" href="#proceso">Ver el proceso</a>
+    <!-- Hero -->
+    <section class="hero pod-hero">
+      <div class="container split">
+        <div class="split-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span>Print on demand</span>
+          <h1 class="hero-title">Creá tu marca con <span class="hl">print on demand</span> en Argentina</h1>
+          <p class="hero-lead">Ofrecé remeras, buzos, gorras, tazas y cuadros con tus diseños sin tener mercadería guardada. Publicás, vendés y recién ahí lo fabricamos.</p>
+          <ul class="check-list">
+            <li><svg><use href="#i-check"/></svg>Tu marca, sin inversión inicial</li>
+            <li><svg><use href="#i-check"/></svg>Diseñás tus productos online</li>
+            <li><svg><use href="#i-check"/></svg>Pagás la producción cuando ya vendiste</li>
+          </ul>
+          <div class="pod-actions">
+            <a class="btn btn-primary" href="https://app.printirol.com/register">Crear cuenta gratis</a>
+            <a class="btn btn-primary" href="index.html#calculadora">Calculá tu ganancia</a>
+          </div>
+        </div>
+        <div class="slideshow" data-slideshow>
+          <img class="is-active" src="media/pod/buzo-personalizado.webp" fetchpriority="high" alt="Buzo naranja con el texto Tu diseño acá en la espalda">
+          <img src="media/pod/tazas-personalizadas.webp" alt="Taza personalizada para el día del padre" loading="lazy" decoding="async">
+          <img src="media/pod/cuadros-personalizados.webp" alt="Cuadro con ilustración de un oso" loading="lazy" decoding="async">
+          <button class="icon-btn slideshow-arrow slideshow-prev" type="button" data-slide-prev aria-label="Imagen anterior"><svg><use href="#i-left"/></svg></button>
+          <button class="icon-btn slideshow-arrow slideshow-next" type="button" data-slide-next aria-label="Imagen siguiente"><svg><use href="#i-right"/></svg></button>
+          <div class="slideshow-dots" role="tablist" aria-label="Elegir imagen"></div>
         </div>
       </div>
     </section>
+
+    <!-- Tipos de clientes -->
+    <div class="marquee marquee-light" data-marquee data-speed="40" aria-label="Para quién es Printirol">
+      <ul class="marquee-track">
+        <li><svg><use href="#i-rocket"/></svg>Emprendedores</li>
+        <li><svg><use href="#i-pen"/></svg>Ilustradores</li>
+        <li><svg><use href="#i-palette"/></svg>Diseñadores</li>
+        <li><svg><use href="#i-shirt"/></svg>Marcas de ropa</li>
+        <li><svg><use href="#i-camera"/></svg>Creadores de contenido</li>
+        <li><svg><use href="#i-briefcase"/></svg>Comercios y pymes</li>
+        <li><svg><use href="#i-music"/></svg>Bandas</li>
+        <li><svg><use href="#i-heart"/></svg>Artistas</li>
+      </ul>
+    </div>
+
+    <!-- Qué es -->
+    <section class="section" id="que-es">
+      <div class="container">
+        <div class="pod-what">
+          <h2 class="section-title">¿Qué es el <span class="hl">print on demand</span>?</h2>
+          <p>Es una forma de vender productos personalizados en la que cada unidad se imprime <strong>recién cuando alguien la compra</strong>. No hay que llenar un depósito, no hay cantidades mínimas y no te ocupás de empaquetar ni de despachar.</p>
+          <p>Con Printirol armás tus productos en el editor, los publicás en tu Tiendanube o los ofrecés por redes, y cuando entra un pedido <strong>lo producimos y lo mandamos por OCA</strong> al domicilio de tu cliente.</p>
+          <p>Vos te encargás de tu marca y de vender. La fabricación y el envío corren por nuestra cuenta.</p>
+          <div class="pod-actions">
+            <a class="btn btn-primary" href="https://app.printirol.com/register">Empezar ahora</a>
+            <a class="btn btn-primary" href="catalogo.html">Ver el catálogo</a>
+          </div>
+        </div>
+        <div class="pod-collage">
+          <figure><img src="media/pod/Buzo-canguro-6.webp" alt="Buzo gris con texto estampado en la manga" loading="lazy" decoding="async"></figure>
+          <figure><img src="media/pod/Tutti-fruti.webp" alt="Gorra con el logo de una frutería" loading="lazy" decoding="async"></figure>
+          <figure class="c-wide"><img src="media/pod/WhatsApp-Image-2026-04-20-at-21.40.09-3.webp" alt="Merch de una marca de bicicletas: remeras y gorras" loading="lazy" decoding="async"></figure>
+          <figure class="c-big"><img src="media/pod/capibara.webp" alt="Remera con ilustración de capibara" loading="lazy" decoding="async"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frases -->
+    <div class="marquee marquee-dark" data-marquee data-speed="45" aria-label="Beneficios de Printirol">
+      <ul class="marquee-track">
+        <li><svg><use href="#i-rocket"/></svg>Empezá gratis</li>
+        <li><svg><use href="#i-box"/></svg>Vendé sin stock</li>
+        <li><svg><use href="#i-coin"/></svg>Cero inversión inicial</li>
+        <li><svg><use href="#i-tag"/></svg>Tu marca, tus precios</li>
+        <li><svg><use href="#i-store"/></svg>Conectado a Tiendanube</li>
+        <li><svg><use href="#i-truck"/></svg>Envíos a todo el país</li>
+        <li><svg><use href="#i-layers"/></svg>Mockups listos para vender</li>
+      </ul>
+    </div>
 
     <!-- Comparación -->
-    <section class="section-sm">
+    <section class="section section-soft" id="stock-o-a-pedido">
       <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">¿Stock propio o <span class="hl">a pedido</span>?</h2>
+          <p class="section-lead">La diferencia está en cuándo ponés la plata y quién se ocupa de cada paso.</p>
+        </div>
         <div class="compare">
-          <div class="compare-col reveal">
-            <h3>Modelo tradicional</h3>
+          <article class="compare-card">
+            <h3>Con stock propio</h3>
             <ul>
-              <li><svg class="x" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l10 10M15 5 5 15"/></svg>Comprás stock por adelantado y en cantidad</li>
-              <li><svg class="x" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l10 10M15 5 5 15"/></svg>Necesitás espacio para guardar la mercadería</li>
-              <li><svg class="x" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l10 10M15 5 5 15"/></svg>Si un diseño no se vende, perdés la plata</li>
-              <li><svg class="x" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l10 10M15 5 5 15"/></svg>Empaquetás y llevás cada envío al correo</li>
-              <li><svg class="x" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l10 10M15 5 5 15"/></svg>Probar diseños nuevos es caro y lento</li>
-            </ul>
-          </div>
-          <div class="compare-col is-printirol reveal" style="--delay:.08s">
-            <h3><img src="img/icon.png" alt="">Con Printirol</h3>
-            <ul>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>$0 de inversión: pagás cuando ya vendiste</li>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Cero stock: producimos cada unidad a pedido</li>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Sin riesgo: probá todos los diseños que quieras</li>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Producimos, empaquetamos y enviamos con OCA</li>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Vos te enfocás en diseñar y vender</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Proceso -->
-    <section class="section section-soft" id="proceso">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">El proceso, paso a paso</span>
-          <h2 class="h2">Así funciona un pedido en Printirol</h2>
-          <p class="lead">Desde que creás tu cuenta hasta que tu cliente recibe el paquete en su casa.</p>
-        </div>
-
-        <ol class="timeline">
-          <li class="reveal">
-            <span class="step-num">1</span>
-            <div>
-              <h3>Creás tu cuenta gratis</h3>
-              <p>Te registrás en app.printirol.com en un minuto. No pedimos tarjeta ni hay costo de alta.</p>
-              <span class="badge badge-gray who">Vos</span>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="step-num">2</span>
-            <div>
-              <h3>Diseñás tus productos</h3>
-              <p>Elegís un producto del catálogo, subís tus imágenes y sumás textos en el editor. Elegís colores y talles, y en las tazas podés ver la vista previa 3D.</p>
-              <span class="badge badge-gray who">Vos · Editor de diseños</span>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="step-num">3</span>
-            <div>
-              <h3>Conectás tu Tiendanube</h3>
-              <p>Desde Integraciones vinculás tu tienda con un clic, o instalás la app desde la <a class="accent" data-app="tiendanube" href="#">Tienda de Aplicaciones de Tiendanube</a>.</p>
-              <span class="badge badge-gray who">Vos · Tiendanube</span>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="step-num">4</span>
-            <div>
-              <h3>Publicás con tu precio</h3>
-              <p>Publicás el diseño en tu tienda con fotos, variantes y el precio que vos quieras. Stock y precios quedan sincronizados.</p>
-              <span class="badge badge-gray who">Vos · Tiendanube</span>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="step-num">5</span>
-            <div>
-              <h3>Tu cliente compra</h3>
-              <p>El cliente compra en tu tienda y te paga a vos. El pedido entra automáticamente a tu panel de Printirol.</p>
-              <span class="badge badge-gray who">Tu cliente · Automático</span>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="step-num">6</span>
-            <div>
-              <h3>Pagás el costo con Mercado Pago</h3>
-              <p>Confirmás el pedido y pagás solo el costo de producción y envío con Mercado Pago. La diferencia con tu precio de venta es tu ganancia.</p>
-              <span class="badge badge-gray who">Vos · Mercado Pago</span>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="step-num">7</span>
-            <div>
-              <h3>Producimos y enviamos</h3>
-              <p>Imprimimos, controlamos la calidad, empaquetamos y despachamos con OCA a domicilio o a sucursal. Vos y tu cliente reciben el número de seguimiento.</p>
-              <span class="badge who">Printirol · OCA</span>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Flujo del dinero -->
-    <section class="section" id="ganancias">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Cuentas claras</span>
-          <h2 class="h2">¿Cómo ganás plata?</h2>
-          <p class="lead">Un ejemplo con una remera clásica. Vos definís el precio de venta en tu tienda.</p>
-        </div>
-        <div class="money-flow reveal">
-          <div class="money-box">
-            <small>Tu cliente paga en tu tienda</small>
-            <strong data-example="sale"></strong>
-            <p>El precio lo ponés vos</p>
-          </div>
-          <span class="money-op" aria-hidden="true">−</span>
-          <div class="money-box">
-            <small>Vos pagás a Printirol</small>
-            <strong data-example="cost"></strong>
-            <p>Producción + envío con OCA</p>
-          </div>
-          <span class="money-op" aria-hidden="true">=</span>
-          <div class="money-box win">
-            <small>Tu ganancia por unidad</small>
-            <strong data-example="profit"></strong>
-            <p>Sin stock ni inversión</p>
-          </div>
-        </div>
-        <div class="center mt-32 reveal">
-          <a class="link-arrow" href="index.html#calculadora">Probá la calculadora con otros productos
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Integraciones -->
-    <section class="section section-soft" id="integraciones">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Integraciones</span>
-          <h2 class="h2">Conectado con Tiendanube, Mercado Pago y OCA</h2>
-          <p class="lead">Las herramientas líderes de Argentina, trabajando juntas para que vos no tengas que hacer nada a mano.</p>
-        </div>
-        <div class="integrations">
-          <article class="integration reveal">
-            <div class="logo-box logo-tn"><img src="img/tiendanube.png" alt="" style="max-height:38px"><span>tiendanube</span></div>
-            <h3>Tiendanube</h3>
-            <p>Tu tienda y Printirol, sincronizadas. Instalá la app oficial y vendé tus diseños en minutos.</p>
-            <ul>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Publicación de productos con fotos y variantes</li>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pedidos que llegan solos a Printirol</li>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Stock y precios sincronizados</li>
-            </ul>
-            <a class="link-arrow" data-app="tiendanube" href="#">Ver app en Tiendanube
-              <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-            </a>
-          </article>
-          <article class="integration reveal" style="--delay:.08s">
-            <div class="logo-box"><img src="img/mercado-pago.png" alt="Mercado Pago"></div>
-            <h3>Mercado Pago</h3>
-            <p>Pagá la producción de tus pedidos de forma rápida y segura, con el medio que prefieras.</p>
-            <ul>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tarjetas de crédito y débito</li>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dinero disponible en tu cuenta</li>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Confirmación instantánea del pedido</li>
+              <li><svg class="ic-x"><use href="#i-x"/></svg>Comprás por mayor antes de vender</li>
+              <li><svg class="ic-x"><use href="#i-x"/></svg>Elegís talles y colores a ciegas</li>
+              <li><svg class="ic-x"><use href="#i-x"/></svg>Necesitás espacio para guardar todo</li>
+              <li><svg class="ic-x"><use href="#i-x"/></svg>Empaquetás y despachás vos</li>
+              <li><svg class="ic-x"><use href="#i-x"/></svg>Lo que no se vende queda parado</li>
             </ul>
           </article>
-          <article class="integration reveal" style="--delay:.16s">
-            <div class="logo-box"><img class="oca" src="img/oca.png" alt="OCA"></div>
-            <h3>OCA</h3>
-            <p>Envíos a todo el país con uno de los correos más grandes de Argentina.</p>
+          <article class="compare-card is-featured">
+            <h3>Con Printirol</h3>
             <ul>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Entrega a domicilio o en sucursal</li>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Número de seguimiento en cada pedido</li>
-              <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Etiquetas y despacho a cargo nuestro</li>
+              <li><svg><use href="#i-check"/></svg>Pagás la producción cuando ya vendiste</li>
+              <li><svg><use href="#i-check"/></svg>Ofrecés todos los talles y colores</li>
+              <li><svg><use href="#i-check"/></svg>Cero mercadería guardada</li>
+              <li><svg><use href="#i-check"/></svg>Fabricamos y enviamos con OCA</li>
+              <li><svg><use href="#i-check"/></svg>Probás diseños nuevos sin riesgo</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Muestra -->
-    <section class="section" id="muestras">
+    <!-- 3 pasos -->
+    <section class="section steps-section" id="pasos">
       <div class="container split">
-        <div class="reveal">
-          <span class="badge">Beneficio de bienvenida</span>
-          <h2 class="h2 mt-16">Probá la calidad con un <span class="underline-accent">20% off</span> en tu muestra</h2>
-          <p class="lead">Antes de salir a vender, pedí tus propios productos y comprobá la calidad de impresión con tus manos.</p>
-          <ul class="check-list">
-            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>20% de descuento</strong> sobre el producto</span></li>
-            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Hasta <strong>3 unidades</strong> en tu pedido de muestra</span></li>
-            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ideal para sacar <strong>tus propias fotos</strong> de producto</span></li>
-          </ul>
-          <div class="hero-ctas">
-            <a class="btn btn-primary btn-lg" data-app="register" href="#">Crear cuenta y pedir muestra
-              <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-            </a>
+        <div class="split-copy">
+          <h2 class="section-title">Tu tienda print on demand en <span class="hl">3 pasos</span></h2>
+          <p class="section-lead">Elegís el producto, sumás tu diseño, lo publicás y empezás a recibir pedidos. Así de simple.</p>
+          <a class="btn btn-primary" href="https://app.printirol.com/register">Arrancá hoy</a>
+        </div>
+        <div class="steps" data-steps>
+          <div class="step is-open">
+            <button class="step-head" type="button" aria-expanded="true">
+              <span class="step-num">1</span>
+              <span class="step-title">Creá productos con tu diseño</span>
+              <svg class="step-chevron"><use href="#i-chevron"/></svg>
+            </button>
+            <div class="step-body"><p>Elegí una remera, buzo, gorra, taza, tote o cuadro del catálogo y aplicale tu logo, ilustración o frase en el editor online.</p></div>
           </div>
-        </div>
-        <div class="split-visual reveal" style="--delay:.08s">
-          <div class="hero-photo">
-            <img src="img/login-shirts.jpg" alt="Muestras de remeras personalizadas" loading="lazy">
+          <div class="step">
+            <button class="step-head" type="button" aria-expanded="false">
+              <span class="step-num">2</span>
+              <span class="step-title">Publicalo donde vendés</span>
+              <svg class="step-chevron"><use href="#i-chevron"/></svg>
+            </button>
+            <div class="step-body"><p>Subilo a tu Tiendanube con la app de Printirol, o usá los mockups para venderlo por Instagram, WhatsApp o Mercado Libre.</p></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section-soft" id="preguntas">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Dudas comunes</span>
-          <h2 class="h2">Preguntas sobre print on demand</h2>
-        </div>
-        <div class="faq reveal">
-          <details>
-            <summary>¿Cuánto tarda en producirse un pedido?</summary>
-            <div class="answer">Cada pedido se produce a medida apenas lo confirmás. Desde la plataforma podés seguir el estado (pagado, en producción, enviado) y el seguimiento de OCA.</div>
-          </details>
-          <details>
-            <summary>¿Hay un mínimo de unidades?</summary>
-            <div class="answer">No. Producimos desde 1 unidad, así que podés probar todos los diseños que quieras sin comprometerte con cantidades. Si necesitás volumen para un evento o empresa, <a href="contacto.html?motivo=Mayorista">escribinos</a>.</div>
-          </details>
-          <details>
-            <summary>¿Qué pasa si un producto llega con fallas?</summary>
-            <div class="answer">Controlamos la calidad antes de despachar. Si algo llega mal, contactanos con el número de pedido y lo resolvemos.</div>
-          </details>
-          <details>
-            <summary>¿Puedo vender en otros canales además de Tiendanube?</summary>
-            <div class="answer">Hoy la integración automática es con Tiendanube. Para otros canales podés cargar los pedidos desde la plataforma. <a href="contacto.html">Contanos qué canal usás</a> y lo tenemos en cuenta.</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta-final reveal">
-          <img class="drops" src="img/icon.png" alt="">
-          <h2 class="h2">Tu marca, sin stock. Empezá hoy.</h2>
-          <p>Diseñá tu primer producto y conectá tu Tiendanube en minutos.</p>
-          <div class="hero-ctas">
-            <a class="btn btn-primary btn-lg" data-app="register" href="#">Empezá a vender
-              <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-            </a>
-            <a class="btn btn-sober btn-lg" href="catalogo.html">Ver catálogo</a>
+          <div class="step">
+            <button class="step-head" type="button" aria-expanded="false">
+              <span class="step-num">3</span>
+              <span class="step-title">Nosotros lo producimos y lo enviamos</span>
+              <svg class="step-chevron"><use href="#i-chevron"/></svg>
+            </button>
+            <div class="step-body"><p>Con cada venta pagás el pedido con Mercado Pago, lo fabricamos y sale por OCA a la casa de tu cliente. Te avisamos por mail cuando se despacha.</p></div>
           </div>
         </div>
       </div>
@@ -285,18 +167,6 @@
 
   <div id="site-footer"></div>
 
-  <script src="js/data.js?v=10"></script>
-  <script src="js/main.js?v=10"></script>
-  <script>
-    (function () {
-      var p = window.PRINTIROL.products[0];
-      var cost = p.basePrice + p.shippingPrice;
-      var sale = Math.round((cost * 2) / 100) * 100;
-      var fmt = function (n) { return '$ ' + n.toLocaleString('es-AR'); };
-      document.querySelector('[data-example="sale"]').textContent = fmt(sale);
-      document.querySelector('[data-example="cost"]').textContent = fmt(cost);
-      document.querySelector('[data-example="profit"]').textContent = fmt(sale - cost);
-    })();
-  </script>
+  <script src="js/main.js?v=31"></script>
 </body>
 </html>

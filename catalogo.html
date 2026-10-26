@@ -3,114 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de productos personalizables | Printirol</title>
-  <meta name="description" content="Remeras, buzos, tazas, tote bags, gorras y cuadros para personalizar con tu diseño. Producción bajo demanda en Argentina y envíos a todo el país.">
+  <title>Catálogo | Printirol</title>
+  <meta name="description" content="Remeras oversize, crop tops, buzos, gorras, tazas, tote bags y cuadros para personalizar con tu diseño y vender con tu marca.">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" type="image/png" href="img/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=10">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="css/styles.css?v=31">
 </head>
 <body data-page="catalogo">
   <div id="site-header"></div>
 
   <main>
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow reveal"><span class="dot">AR</span> Fabricación local</span>
-        <h1 class="display reveal" style="--delay:.05s">Catálogo de productos</h1>
-        <p class="lead reveal" style="--delay:.1s">
-          Elegí la base y ponele tu diseño. Todos los productos se imprimen a pedido en Argentina y se envían a todo el país.
-        </p>
+    <section class="hero catalog-hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Elegí el producto.<br><span class="hl">Ponele tu marca.</span></h1>
+        <p class="hero-lead">Productos listos para personalizar con tu diseño. Vos lo vendés con tu precio y nosotros lo fabricamos y lo enviamos a todo el país.</p>
       </div>
     </section>
 
-    <section class="section-sm" style="padding-top:8px">
-      <div class="container">
-        <div class="catalog-toolbar">
-          <div class="chips" data-catalog-chips role="group" aria-label="Categorías"></div>
-          <label class="search">
-            <span class="sr-only">Buscar productos</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-            <input class="input" type="search" placeholder="Buscar productos" data-catalog-search>
-          </label>
-        </div>
-        <p class="muted" style="font-size:14px;margin:-16px 0 24px" data-catalog-count aria-live="polite"></p>
-        <div class="product-grid cols-3" data-catalog></div>
+    <div class="marquee marquee-dark" data-marquee data-speed="45" aria-label="Beneficios de Printirol">
+      <ul class="marquee-track">
+        <li><svg><use href="#i-store"/></svg>Conectado a Tiendanube</li>
+        <li><svg><use href="#i-box"/></svg>Vendé sin stock</li>
+        <li><svg><use href="#i-rocket"/></svg>Empezá gratis</li>
+        <li><svg><use href="#i-tag"/></svg>Tu marca, tus precios</li>
+        <li><svg><use href="#i-truck"/></svg>Envíos a todo el país</li>
+        <li><svg><use href="#i-layers"/></svg>Mockups listos para vender</li>
+      </ul>
+    </div>
 
-        <p class="center muted mt-48" style="font-size:14px">
-          Los precios son costos de producción de referencia. En la plataforma vas a ver el catálogo completo y actualizado.
-        </p>
-        <div class="center mt-16">
-          <a class="btn btn-primary btn-lg" data-app="register" href="#">Ver catálogo completo en la plataforma
-            <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Calidad -->
     <section class="section section-soft">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Calidad Printirol</span>
-          <h2 class="h2">Productos que tus clientes van a querer volver a comprar</h2>
-        </div>
-        <div class="features reveal">
-          <article class="feature">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.7-.8 1.7-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.8-1.7 1.7-1.7h2c3.1 0 5.6-2.5 5.6-5.6C22 6 17.5 2 12 2z"/></svg></div>
-            <h3>Impresión full color</h3>
-            <p>DTF, sublimación e impresión UV según el producto, con colores vivos y detalles nítidos.</p>
-          </article>
-          <article class="feature">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-            <h3>Control de calidad</h3>
-            <p>Revisamos cada unidad antes de empaquetarla para que llegue impecable a tu cliente.</p>
-          </article>
-          <article class="feature">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <h3>Hecho en Argentina</h3>
-            <p>Producción nacional: tiempos más cortos y envíos con OCA a todo el país.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Calculadora -->
-    <section class="section" id="calculadora">
-      <div class="container calc-wrap">
-        <div class="reveal">
-          <div class="section-head left" style="margin-bottom:0">
-            <span class="kicker">Calculadora de precios</span>
-            <h2 class="h2">Calculá tu ganancia por producto</h2>
-            <p class="lead">Elegí un producto y probá distintos precios de venta. El costo ya incluye el envío a tu cliente.</p>
-          </div>
-        </div>
-        <div class="calc reveal" style="--delay:.08s" data-calculator></div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top:0">
-      <div class="container">
-        <div class="tn-band reveal">
-          <div class="tn-logo"><img src="img/tiendanube.png" alt="Tiendanube"></div>
-          <div>
-            <h3>Vendé estos productos en tu Tiendanube</h3>
-            <p>Instalá Printirol desde la Tienda de Aplicaciones y publicá tus diseños con fotos y variantes en minutos.</p>
-          </div>
-          <a class="btn btn-dark btn-lg" data-app="tiendanube" href="#">Instalar app
-            <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-          </a>
-        </div>
+        <div class="catalog-grid" data-catalog-grid></div>
       </div>
     </section>
   </main>
 
   <div id="site-footer"></div>
-  <dialog class="modal" id="product-modal" aria-label="Detalle del producto"></dialog>
 
-  <script src="js/data.js?v=10"></script>
-  <script src="js/main.js?v=10"></script>
+  <script src="js/main.js?v=31"></script>
 </body>
 </html>

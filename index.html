@@ -3,291 +3,414 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Printirol | Print on demand en Argentina — Vendé sin stock</title>
-  <meta name="description" content="Lanzá tu marca sin stock ni inversión inicial. Diseñá productos personalizados, conectá tu Tiendanube y Printirol produce, empaqueta y envía cada pedido a todo el país.">
-  <meta property="og:title" content="Printirol | Print on demand en Argentina">
-  <meta property="og:description" content="Vos vendés. Printirol produce y envía. Integración con Tiendanube, pagos con Mercado Pago y envíos con OCA.">
-  <meta property="og:image" content="img/login-shirts.jpg">
+  <title>Printirol | Print on demand en Argentina</title>
+  <meta name="description" content="Diseñá productos con tu marca y vendelos sin stock. Printirol produce y envía por vos a todo el país. Integrado con Tiendanube.">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" type="image/png" href="img/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=10">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="css/styles.css?v=31">
 </head>
 <body data-page="inicio">
+
   <div id="site-header"></div>
 
   <main>
-    <!-- Hero -->
+    <!-- 1. Hero -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <a class="eyebrow reveal" data-app="tiendanube" href="#">
-            <span class="dot">NUEVO</span> Ya estamos en la Tienda de Apps de Tiendanube
-          </a>
-          <h1 class="display reveal" style="--delay:.05s">
-            Lanzá tu marca <span class="underline-accent">sin stock</span> ni inversión inicial
-          </h1>
-          <p class="lead reveal" style="--delay:.1s">
-            Diseñá remeras, buzos, tazas y más en minutos, conectá tu Tiendanube y empezá a vender.
-            Nosotros producimos, empaquetamos y enviamos cada pedido a todo el país.
-          </p>
-          <div class="hero-ctas reveal" style="--delay:.15s">
-            <a class="btn btn-primary btn-lg" data-app="register" href="#">Empezá a vender gratis
-              <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-            </a>
-            <a class="btn btn-sober btn-lg" href="print-on-demand.html">Cómo funciona</a>
-          </div>
-          <ul class="hero-trust reveal" style="--delay:.2s">
-            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Sin costo de alta</li>
-            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pagás solo cuando vendés</li>
-            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Fabricación local</li>
-          </ul>
+      <div class="container hero-inner">
+        <h1 class="hero-title">Print on Demand<br><span class="hl">Printirol</span></h1>
+        <p class="hero-lead">Printirol fabrica y despacha por vos remeras, buzos, tazas, gorras y más con tu diseño. Conectá tu Tiendanube o cargá los pedidos que te llegan por redes: vos ponés el precio, nosotros nos ocupamos del resto.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://app.printirol.com/register">Crear cuenta gratis</a>
+          <a class="btn btn-primary" href="#como-funciona">Cómo funciona</a>
         </div>
+        <ul class="hero-checks">
+          <li><svg><use href="#i-check"/></svg>Registrarte no cuesta nada</li>
+          <li><svg><use href="#i-check"/></svg>App disponible en <img src="img/tiendanube.png" alt="" class="tn-mini">Tiendanube</li>
+          <li><svg><use href="#i-check"/></svg>Envíos con OCA a todo el país</li>
+        </ul>
+      </div>
+    </section>
 
-        <div class="hero-visual reveal" style="--delay:.1s">
-          <div class="hero-photo">
-            <img src="img/login-shirts.jpg" alt="Remeras personalizadas producidas por Printirol" width="1040" height="821" fetchpriority="high">
+    <!-- 2. Carrusel de imágenes -->
+    <section class="gallery" aria-label="Productos hechos con Printirol">
+      <div class="marquee marquee-gallery" data-marquee data-speed="40">
+        <div class="marquee-track">
+          <figure class="g-col g-tall"><img src="media/fotos/print-on-demand-argentina-1-1.webp" alt="Remera marrón estampada junto a una taza y una tote bag" decoding="async"></figure>
+          <div class="g-col g-stack">
+            <figure><img src="media/fotos/remera-1.webp" alt="Remera bordó con el logo de una carnicería" decoding="async"></figure>
+            <figure><img src="media/fotos/gorra-personalizada-3.webp" alt="Gorra negra con estampa blanca" decoding="async"></figure>
           </div>
-          <div class="float-card one">
-            <img src="img/tiendanube.png" alt="">
-            <div><strong>Nuevo pedido #1024</strong><span>Remera clásica · <span class="gain">+$ 15.800</span></span></div>
+          <figure class="g-col g-wide"><img src="media/fotos/chombas-personalizadas.webp" alt="Chombas de colores con logos estampados" decoding="async"></figure>
+          <figure class="g-col g-tall"><img src="media/fotos/Hoodie-Mockup-1.webp" alt="Buzo con capucha con estampa fotográfica" decoding="async"></figure>
+          <div class="g-col g-stack">
+            <figure><img src="media/fotos/taza-magica.webp" alt="Taza negra con ilustración de montaña" decoding="async"></figure>
+            <figure><img src="media/fotos/mercado-de-bornis-prueba.webp" alt="Tote bag con ilustración a color" decoding="async"></figure>
           </div>
-          <div class="float-card two">
-            <img src="img/oca.png" alt="">
-            <div><strong>Despachado con OCA</strong><span>Tu cliente ya tiene el seguimiento</span></div>
+          <figure class="g-col g-wide"><img src="media/fotos/tazas-personalizadas-2.webp" alt="Tazas personalizadas con distintos diseños" decoding="async"></figure>
+          <figure class="g-col g-tall"><img src="media/fotos/remera-oversize-personalizada-01.webp" alt="Remera oversize blanca con estampa en la espalda" decoding="async"></figure>
+          <div class="g-col g-stack">
+            <figure><img src="media/fotos/WhatsApp-Image-2026-04-20-at-21.40.09.webp" alt="Gorras rojas con el logo de una parrilla" decoding="async"></figure>
+            <figure><img src="media/fotos/image-10.webp" alt="Remera negra con estampa de mano" decoding="async"></figure>
+          </div>
+          <figure class="g-col g-tall"><img src="media/fotos/remera-ViaLyon.webp" alt="Etiqueta estampada en el cuello de una remera" decoding="async"></figure>
+          <figure class="g-col g-tall"><img src="media/fotos/WhatsApp-Image-2026-04-20-at-21.40.09-1.webp" alt="Gorra negra con texto personalizado" decoding="async"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Empezá a vender en 3 pasos -->
+    <section class="section steps-section" id="como-funciona">
+      <div class="container split">
+        <div class="split-copy">
+          <h2 class="section-title">De tu idea a tu cliente en <span class="hl">3 pasos</span></h2>
+          <p class="section-lead">Elegís un producto, le ponés tu diseño y lo ofrecés donde ya vendés. Cada vez que alguien compra, lo fabricamos y se lo mandamos.</p>
+          <a class="btn btn-primary" href="https://app.printirol.com/register">Quiero empezar</a>
+        </div>
+        <div class="steps" data-steps>
+          <div class="step is-open">
+            <button class="step-head" type="button" aria-expanded="true">
+              <span class="step-num">1</span>
+              <span class="step-title">Diseñá tu producto en el editor</span>
+              <svg class="step-chevron"><use href="#i-chevron"/></svg>
+            </button>
+            <div class="step-body"><p>Subí tu logo o ilustración, sumá textos con más de 500 tipografías y acomodalo en centímetros. El editor te avisa si te salís del área de impresión o si la imagen pierde calidad.</p></div>
+          </div>
+          <div class="step">
+            <button class="step-head" type="button" aria-expanded="false">
+              <span class="step-num">2</span>
+              <span class="step-title">Publicalo y salí a vender</span>
+              <svg class="step-chevron"><use href="#i-chevron"/></svg>
+            </button>
+            <div class="step-body"><p>Mandalo a tu Tiendanube con un clic, o descargá los mockups y ofrecelo en Instagram, WhatsApp o Mercado Libre. Vos definís el precio final.</p></div>
+          </div>
+          <div class="step">
+            <button class="step-head" type="button" aria-expanded="false">
+              <span class="step-num">3</span>
+              <span class="step-title">Nosotros lo fabricamos y lo enviamos</span>
+              <svg class="step-chevron"><use href="#i-chevron"/></svg>
+            </button>
+            <div class="step-body"><p>Cuando entra una venta, pagás el pedido con Mercado Pago, lo producimos y lo despachamos por OCA al domicilio de tu cliente. Te avisamos por mail cuando sale.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Integraciones -->
-    <div class="logos">
-      <div class="container">
-        <p>Integrado con las herramientas que ya usás</p>
-        <a class="logo-tn" data-app="tiendanube" href="#" aria-label="Printirol en Tiendanube"><img class="tn" src="img/tiendanube.png" alt=""><span>tiendanube</span></a>
-        <span class="logo-item"><img src="img/mercado-pago.png" alt="Mercado Pago"></span>
-        <span class="logo-item"><img class="oca" src="img/oca.png" alt="OCA"></span>
-      </div>
+    <!-- 4. Frases de la plataforma -->
+    <div class="marquee marquee-dark" data-marquee data-speed="45" aria-label="Beneficios de Printirol">
+      <ul class="marquee-track">
+        <li><svg><use href="#i-rocket"/></svg>Empezá gratis</li>
+        <li><svg><use href="#i-box"/></svg>Vendé sin stock</li>
+        <li><svg><use href="#i-coin"/></svg>Cero inversión inicial</li>
+        <li><svg><use href="#i-tag"/></svg>Tu marca, tus precios</li>
+        <li><svg><use href="#i-store"/></svg>Conectado a Tiendanube</li>
+        <li><svg><use href="#i-truck"/></svg>Envíos a todo el país</li>
+        <li><svg><use href="#i-card"/></svg>Pagás con Mercado Pago</li>
+        <li><svg><use href="#i-pin"/></svg>Producción argentina</li>
+      </ul>
     </div>
 
-    <!-- Pasos -->
-    <section class="section">
+    <!-- 5. Productos para diseñar -->
+    <section class="section" id="productos">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Cómo funciona</span>
-          <h2 class="h2">De la idea a la venta en 3 pasos</h2>
-          <p class="lead">Los mismos pasos que vas a ver al entrar a la plataforma. Sin máquinas, sin stock y sin complicaciones.</p>
+        <div class="section-head">
+          <h2 class="section-title">Un catálogo para <span class="hl">cada idea</span></h2>
+          <p class="section-lead">Remeras, buzos, tazas, totes, gorras y cuadros listos para llevar tu diseño. Elegís qué ofrecer y nosotros lo hacemos realidad.</p>
         </div>
-
-        <div class="steps">
-          <article class="step-card reveal">
-            <div class="step-media">
-              <div class="mini-editor">
-                <div class="tools"><i></i><i></i><i></i><i></i></div>
-                <div class="canvas"><img src="img/productos/remera.jpg" alt=""></div>
-              </div>
-            </div>
-            <span class="step-num">1</span>
-            <h3 class="h3">Diseñá tu producto</h3>
-            <p>Elegí un producto del catálogo y armá tu diseño con nuestro editor: subí imágenes, sumá textos con distintas tipografías y mirá la vista previa al instante.</p>
-          </article>
-
-          <article class="step-card reveal" style="--delay:.08s">
-            <div class="step-media">
-              <div class="mini-connect">
-                <div class="node"><img src="img/icon.png" alt=""></div>
-                <span class="wire"></span>
-                <div class="node"><img src="img/tiendanube.png" alt=""></div>
-              </div>
-            </div>
-            <span class="step-num">2</span>
-            <h3 class="h3">Conectá tu Tiendanube</h3>
-            <p>Con un clic vinculás tu tienda. Sincronizamos pedidos, stock y precios automáticamente para que no tengas que cargar nada a mano.</p>
-          </article>
-
-          <article class="step-card reveal" style="--delay:.16s">
-            <div class="step-media">
-              <div class="mini-order">
-                <div class="row"><b>Pedido #1024</b><span class="badge badge-green">Pagado</span></div>
-                <div class="row"><b>En producción</b><span class="badge">Printirol</span></div>
-                <div class="row"><b>Enviado</b><span class="badge badge-gray">OCA</span></div>
-              </div>
-            </div>
-            <span class="step-num">3</span>
-            <h3 class="h3">Publicá y vendé</h3>
-            <p>Publicás tu diseño en tu tienda. Cuando entra una venta, la producimos y la enviamos con tu marca directo a tu cliente.</p>
-          </article>
-        </div>
-
-        <div class="center mt-48 reveal">
-          <a class="link-arrow" href="print-on-demand.html">Conocé el proceso completo
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
+        <div class="product-grid">
+          <a class="p-tile p-tile-lg" href="catalogo.html" style="--x:31%;--y:24%;--w:38%;--h:50%">
+            <span class="p-name">Remeras</span>
+            <img src="media/productos/remera.webp" alt="Remera negra" loading="lazy" decoding="async">
+            <span class="p-area">Tu diseño</span>
+          </a>
+          <a class="p-tile" href="catalogo.html" style="--x:32%;--y:36%;--w:36%;--h:32%">
+            <span class="p-name">Buzos</span>
+            <img src="media/productos/buzo.webp" alt="Buzo" loading="lazy" decoding="async">
+            <span class="p-area">Tu diseño</span>
+          </a>
+          <a class="p-tile" href="catalogo.html" style="--x:24%;--y:34%;--w:40%;--h:40%">
+            <span class="p-name">Tazas</span>
+            <img src="media/productos/taza.webp" alt="Taza" loading="lazy" decoding="async">
+            <span class="p-area">Tu diseño</span>
+          </a>
+          <a class="p-tile" href="catalogo.html" style="--x:26%;--y:40%;--w:48%;--h:48%">
+            <span class="p-name">Totes</span>
+            <img src="media/productos/tote.webp" alt="Tote bag" loading="lazy" decoding="async">
+            <span class="p-area">Tu diseño</span>
+          </a>
+          <a class="p-tile" href="catalogo.html" style="--x:32%;--y:30%;--w:36%;--h:24%">
+            <span class="p-name">Gorras</span>
+            <img src="media/productos/gorra.webp" alt="Gorra" loading="lazy" decoding="async">
+            <span class="p-area">Tu diseño</span>
+          </a>
+          <a class="p-tile" href="catalogo.html" style="--x:24%;--y:22%;--w:52%;--h:56%">
+            <span class="p-name">Cuadros</span>
+            <img src="media/productos/cuadro.webp" alt="Cuadro" loading="lazy" decoding="async">
+            <span class="p-area">Tu diseño</span>
+          </a>
+          <a class="p-tile p-more" href="catalogo.html">
+            <span class="p-more-title">Y mucho más</span>
+            <span class="p-more-text">Conocé todos los productos, colores y talles disponibles.</span>
+            <span class="btn btn-primary">Ver catálogo</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Plataforma -->
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">La plataforma</span>
-          <h2 class="h2">Todo lo que necesitás para vender, en un solo lugar</h2>
-          <p class="lead">app.printirol.com es tu centro de operaciones: diseñás, publicás, cobrás y seguís cada pedido.</p>
+    <!-- 6. Tipos de clientes -->
+    <section class="section section-soft" id="para-quien">
+      <div class="container split split-media">
+        <div class="slideshow" data-slideshow>
+          <img class="is-active" src="media/fotos/remera-1.webp" alt="Remera de uniforme para un comercio" loading="lazy" decoding="async">
+          <img src="media/fotos/mercado-de-bornis-prueba.webp" alt="Tote bag con la ilustración de una artista" loading="lazy" decoding="async">
+          <img src="media/fotos/WhatsApp-Image-2026-04-20-at-21.40.09.webp" alt="Gorras para un evento" loading="lazy" decoding="async">
+          <img src="media/fotos/remera-oversize-personalizada-01.webp" alt="Remera de una marca de ropa" loading="lazy" decoding="async">
+          <img src="media/fotos/gorra-personalizada-3.webp" alt="Gorra de merch para una marca" loading="lazy" decoding="async">
+          <button class="icon-btn slideshow-arrow slideshow-prev" type="button" data-slide-prev aria-label="Imagen anterior"><svg><use href="#i-left"/></svg></button>
+          <button class="icon-btn slideshow-arrow slideshow-next" type="button" data-slide-next aria-label="Imagen siguiente"><svg><use href="#i-right"/></svg></button>
+          <div class="slideshow-dots" role="tablist" aria-label="Elegir imagen"></div>
         </div>
-
-        <div class="features reveal">
-          <article class="feature">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
-            <h3>Editor de diseños</h3>
-            <p>Subí tus imágenes, agregá textos con tipografías, ubicalos en el área de impresión y guardá tus diseños para reutilizarlos.</p>
-          </article>
-          <article class="feature">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/></svg></div>
-            <h3>Vista previa 3D</h3>
-            <p>Girá tu taza en 3D y mirá cómo queda tu diseño antes de publicarlo. Sin sorpresas para vos ni para tu cliente.</p>
-          </article>
-          <article class="feature">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5M3 21v-5h5"/></svg></div>
-            <h3>Sincronización con Tiendanube</h3>
-            <p>Publicá productos con fotos, variantes y precios en tu tienda. Los pedidos entran solos a Printirol.</p>
-          </article>
-          <article class="feature">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
-            <h3>Pagos con Mercado Pago</h3>
-            <p>Pagás el costo de producción de cada pedido de forma segura con Mercado Pago. Solo cuando ya vendiste.</p>
-          </article>
-          <article class="feature">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62L18.3 8.38A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></div>
-            <h3>Envíos con OCA</h3>
-            <p>Despachamos a todo el país con OCA, a domicilio o a sucursal, con número de seguimiento para tu cliente.</p>
-          </article>
-          <article class="feature">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-6"/></svg></div>
-            <h3>Panel y métricas</h3>
-            <p>Seguí tus ventas, pedidos y ganancias desde tu dashboard, con calculadora de rentabilidad incluida.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Destacados -->
-    <section class="section">
-      <div class="container">
-        <div class="catalog-toolbar reveal">
-          <div class="section-head left" style="margin-bottom:0">
-            <span class="kicker">Catálogo</span>
-            <h2 class="h2">Productos listos para tu marca</h2>
-          </div>
-          <a class="btn btn-sober" href="catalogo.html">Ver todo el catálogo
-            <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-          </a>
-        </div>
-        <div class="product-grid" data-featured-products></div>
-      </div>
-    </section>
-
-    <!-- Calculadora -->
-    <section class="section section-soft" id="calculadora">
-      <div class="container calc-wrap">
-        <div class="reveal">
-          <div class="section-head left" style="margin-bottom:0">
-            <span class="kicker">Calculadora de precios</span>
-            <h2 class="h2">¿Cuánto podés ganar con Printirol?</h2>
-            <p class="lead">Elegí un producto, definí tu precio de venta y mirá tu ganancia al instante. Vos ponés el precio; la diferencia es toda tuya.</p>
-          </div>
-          <ul class="check-list">
-            <li><svg class="check" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Sin mínimos de compra:</strong> producimos desde 1 unidad.</span></li>
-            <li><svg class="check" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Envío incluido en el costo:</strong> sabés cuánto ganás desde el principio.</span></li>
-            <li><svg class="check" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10.2 8 14.7 16.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Muestras con 20% off:</strong> probá la calidad antes de vender.</span></li>
+        <div class="split-copy">
+          <h2 class="section-title">Tus ideas también pueden <span class="hl">generar ingresos</span></h2>
+          <p class="section-lead">Tener tu propia línea de productos ya no exige comprar por mayor ni llenar un depósito. Con Printirol producís de a una unidad, solo cuando alguien la compra.</p>
+          <p class="ideal-label">Pensado para:</p>
+          <ul class="ideal-list">
+            <li><svg><use href="#i-check"/></svg>Emprendedores</li>
+            <li><svg><use href="#i-check"/></svg>Diseñadores</li>
+            <li><svg><use href="#i-check"/></svg>Ilustradores</li>
+            <li><svg><use href="#i-check"/></svg>Marcas de ropa</li>
+            <li><svg><use href="#i-check"/></svg>Comercios y pymes</li>
+            <li><svg><use href="#i-check"/></svg>Creadores de contenido</li>
+            <li><svg><use href="#i-check"/></svg>Músicos y bandas</li>
+            <li><svg><use href="#i-check"/></svg>Eventos y equipos</li>
           </ul>
+          <a class="btn btn-primary" href="https://app.printirol.com/register">Lanzá tu marca</a>
         </div>
-        <div class="calc reveal" style="--delay:.08s" data-calculator></div>
       </div>
     </section>
 
-    <!-- Números -->
-    <section class="section-sm section-dark">
-      <div class="container stats">
-        <div class="stat reveal"><strong>$0</strong><span>de inversión inicial</span></div>
-        <div class="stat reveal" style="--delay:.06s"><strong>1</strong><span>unidad mínima por pedido</span></div>
-        <div class="stat reveal" style="--delay:.12s"><strong>100%</strong><span>producción en Argentina</span></div>
-        <div class="stat reveal" style="--delay:.18s"><strong>23 + CABA</strong><span>provincias con envío OCA</span></div>
-      </div>
-    </section>
+    <!-- 7. Carrusel tipos de clientes -->
+    <div class="marquee marquee-light marquee-reverse" data-marquee data-speed="40" aria-label="Para quién es Printirol">
+      <ul class="marquee-track">
+        <li><svg><use href="#i-rocket"/></svg>Emprendedores</li>
+        <li><svg><use href="#i-pen"/></svg>Ilustradores</li>
+        <li><svg><use href="#i-palette"/></svg>Diseñadores</li>
+        <li><svg><use href="#i-shirt"/></svg>Marcas de ropa</li>
+        <li><svg><use href="#i-camera"/></svg>Creadores de contenido</li>
+        <li><svg><use href="#i-briefcase"/></svg>Comercios y pymes</li>
+        <li><svg><use href="#i-music"/></svg>Bandas</li>
+        <li><svg><use href="#i-users"/></svg>Equipos y eventos</li>
+        <li><svg><use href="#i-heart"/></svg>Artistas</li>
+      </ul>
+    </div>
 
-    <!-- Tiendanube -->
-    <section class="section">
-      <div class="container">
-        <div class="tn-band reveal">
-          <div class="tn-logo"><img src="img/tiendanube.png" alt="Tiendanube"></div>
-          <div>
-            <h3>Instalá Printirol desde Tiendanube</h3>
-            <p>Encontranos en la Tienda de Aplicaciones de Tiendanube y conectá tu tienda en segundos. Sincronización automática de pedidos, productos y stock.</p>
+    <!-- 8. Tiendanube -->
+    <section class="section" id="tiendanube">
+      <div class="container split">
+        <div class="split-copy">
+          <span class="tn-brand"><img src="img/tiendanube.png" alt="">Tiendanube</span>
+          <h2 class="section-title">¿Ya tenés tu Tiendanube? <span class="hl">Sumale productos propios</span></h2>
+          <p class="section-lead">Instalás la app de Printirol en tu tienda y empezás a ofrecer productos con tu diseño, sin cambiar de plataforma y sin cargar inventario.</p>
+          <ul class="check-list">
+            <li><svg><use href="#i-check"/></svg>Publicás tus productos desde Printirol con fotos y variantes</li>
+            <li><svg><use href="#i-check"/></svg>Las ventas entran solas como pedidos para producir</li>
+            <li><svg><use href="#i-check"/></svg>El número de seguimiento de OCA se carga en tu tienda</li>
+          </ul>
+          <a class="btn btn-primary" href="https://www.tiendanube.com/tienda-aplicaciones-nube/printirol-pod" target="_blank" rel="noopener">Instalar la app</a>
+        </div>
+        <div class="tn-visual">
+          <img src="media/fotos/Hoodie-Mockup-1.webp" alt="Buzo con estampa vendido desde una Tiendanube" loading="lazy" decoding="async">
+          <div class="tn-card tn-card-top">
+            <span class="tn-card-icon"><svg><use href="#i-store"/></svg></span>
+            <div>
+              <strong>Nueva venta en tu tienda</strong>
+              <span>Buzo bordó · Talle M</span>
+            </div>
+            <span class="status">En producción</span>
           </div>
-          <a class="btn btn-dark btn-lg" data-app="tiendanube" href="#">Ver la app
-            <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section-soft" id="preguntas">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Preguntas frecuentes</span>
-          <h2 class="h2">Todo lo que querés saber</h2>
-        </div>
-        <div class="faq reveal">
-          <details>
-            <summary>¿Cuánto cuesta usar Printirol?</summary>
-            <div class="answer">Crear tu cuenta y usar la plataforma es gratis. Solo pagás el costo de producción y envío de cada producto cuando recibís una venta. No hay abonos ni costos ocultos.</div>
-          </details>
-          <details>
-            <summary>¿Necesito tener una tienda en Tiendanube?</summary>
-            <div class="answer">Es la forma más simple: conectás tu tienda y los pedidos llegan solos. Podés instalar Printirol directo desde la <a data-app="tiendanube" href="#">Tienda de Aplicaciones de Tiendanube</a>. También podés crear pedidos manualmente desde la plataforma.</div>
-          </details>
-          <details>
-            <summary>¿Cómo pago los pedidos?</summary>
-            <div class="answer">Cada pedido se paga con Mercado Pago (tarjeta, dinero en cuenta y más). Tu cliente te paga a vos en tu tienda; vos pagás a Printirol solo el costo del producto y el envío.</div>
-          </details>
-          <details>
-            <summary>¿Cómo se envían los productos?</summary>
-            <div class="answer">Despachamos con OCA a todo el país, a domicilio o a sucursal. Desde la plataforma ves el estado de cada pedido y el número de seguimiento.</div>
-          </details>
-          <details>
-            <summary>¿Puedo pedir una muestra antes de vender?</summary>
-            <div class="answer">Sí. Tenés un beneficio de muestra con 20% de descuento sobre el producto (hasta 3 unidades) para que compruebes la calidad con tus propios ojos.</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA final -->
-    <section class="section">
-      <div class="container">
-        <div class="cta-final reveal">
-          <img class="drops" src="img/icon.png" alt="">
-          <h2 class="h2">Vos vendés. Printirol produce y envía.</h2>
-          <p>Creá tu cuenta gratis y publicá tu primer producto hoy mismo.</p>
-          <div class="hero-ctas">
-            <a class="btn btn-primary btn-lg" data-app="register" href="#">Empezá a vender
-              <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-            </a>
-            <a class="btn btn-sober btn-lg" href="contacto.html">Hablar con nosotros</a>
+          <div class="tn-card tn-card-bottom">
+            <span class="tn-card-icon"><svg><use href="#i-truck"/></svg></span>
+            <div>
+              <strong>Pedido enviado con OCA</strong>
+              <span>Seguimiento cargado en Tiendanube</span>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Calculadora -->
+    <section class="section section-soft" id="calculadora">
+      <div class="container split split-media">
+        <div class="calc-wrap">
+          <div class="calc" data-calc>
+            <div class="calc-product">
+              <button class="icon-btn" type="button" data-calc-prev aria-label="Producto anterior"><svg><use href="#i-left"/></svg></button>
+              <div class="calc-thumb"><img src="media/productos/remera.webp" alt="" data-calc-img></div>
+              <button class="icon-btn" type="button" data-calc-next aria-label="Producto siguiente"><svg><use href="#i-right"/></svg></button>
+            </div>
+            <p class="calc-name" data-calc-name aria-live="polite">Remera</p>
+            <div class="calc-stats">
+              <div><span>Costo de producción</span><strong data-calc-cost>$ 0</strong></div>
+              <div><span>Ganás por unidad</span><strong class="hl-num" data-calc-unit>$ 0</strong></div>
+            </div>
+            <div class="calc-field">
+              <label for="calc-price">Tu precio de venta</label>
+              <div class="calc-row">
+                <input type="range" id="calc-price" class="range" data-calc-price-range>
+                <input type="number" class="input calc-num" data-calc-price aria-label="Precio de venta">
+              </div>
+            </div>
+            <div class="calc-field">
+              <label for="calc-sales">Ventas por mes</label>
+              <div class="calc-row">
+                <input type="range" id="calc-sales" class="range" min="1" max="200" step="1" value="20" data-calc-sales-range>
+                <input type="number" class="input calc-num" min="1" max="200" value="20" data-calc-sales aria-label="Ventas por mes">
+              </div>
+            </div>
+            <div class="calc-total">
+              <span>Ganancia mensual estimada</span>
+              <strong data-calc-total>$ 0</strong>
+            </div>
+          </div>
+          <p class="calc-note">* Valores de referencia. El envío se calcula aparte.</p>
+        </div>
+        <div class="split-copy">
+          <span class="calc-icon"><svg><use href="#i-coin"/></svg></span>
+          <h2 class="section-title">Hacé la cuenta: <span class="hl">¿cuánto podés ganar?</span></h2>
+          <p class="section-lead">Tu ganancia es la diferencia entre el precio al que vendés y lo que cuesta producir. Elegí un producto, movés el precio y mirá cuánto te queda a fin de mes.</p>
+          <ul class="check-list">
+            <li><svg><use href="#i-check"/></svg>Crear tu cuenta no tiene costo</li>
+            <li><svg><use href="#i-check"/></svg>Sin compras mínimas ni stock</li>
+            <li><svg><use href="#i-check"/></svg>Pagás la producción cuando ya vendiste</li>
+          </ul>
+          <a class="btn btn-primary" href="https://app.printirol.com/register">Empezar a ganar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Por qué elegir Printirol -->
+    <section class="section why" id="por-que-printirol">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">¿Por qué elegir <span class="hl">Printirol</span> para tu tienda print on demand?</h2>
+          <p class="section-lead">Todo lo que necesitás para vender productos con tu marca, en una sola plataforma. Vos te enfocás en vender; la producción y los envíos corren por nuestra cuenta.</p>
+        </div>
+        <div class="why-grid">
+          <article class="why-card">
+            <span class="why-icon"><svg><use href="#i-pen"/></svg></span>
+            <h3>Editor online completo</h3>
+            <p>Más de 500 tipografías, medidas en centímetros y un medidor de calidad para que tu diseño se imprima nítido.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon"><svg><use href="#i-image"/></svg></span>
+            <h3>Mockups por color</h3>
+            <p>Generá las fotos de cada variante y descargalas para tu tienda o tus redes. En tazas, además, vista previa 3D.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon"><svg><use href="#i-store"/></svg></span>
+            <h3>Integración con Tiendanube</h3>
+            <p>Publicá desde Printirol y recibí las ventas como pedidos automáticos, con el seguimiento sincronizado.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon"><svg><use href="#i-truck"/></svg></span>
+            <h3>Envíos con OCA</h3>
+            <p>Entrega a domicilio en todo el país. Si el pedido trae varios productos, pagás un solo envío.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon"><svg><use href="#i-chat"/></svg></span>
+            <h3>Ventas por redes</h3>
+            <p>¿Vendiste por Instagram o WhatsApp? Cargá el pedido a mano. Y si viene de Mercado Libre con etiqueta, el envío es $0.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon"><svg><use href="#i-gift"/></svg></span>
+            <h3>Muestra con descuento</h3>
+            <p>Probá la calidad antes de vender: 20% off en la producción de hasta 3 productos, una vez por cuenta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Empezá a vender hoy -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Tu primera venta puede ser <span class="hl">esta semana</span></h2>
+          <p>Abrí tu cuenta sin costo, diseñá tu primer producto y publicalo hoy mismo.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://app.printirol.com/register">Crear cuenta gratis</a>
+            <a class="btn btn-primary" href="catalogo.html">Ver catálogo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Frases de la plataforma -->
+    <div class="marquee marquee-dark" data-marquee data-speed="45" aria-label="Beneficios de Printirol">
+      <ul class="marquee-track">
+        <li><svg><use href="#i-shirt"/></svg>Tu diseño, tu producto</li>
+        <li><svg><use href="#i-rocket"/></svg>Lanzá tu marca hoy</li>
+        <li><svg><use href="#i-box"/></svg>Producimos por unidad</li>
+        <li><svg><use href="#i-layers"/></svg>Mockups listos para vender</li>
+        <li><svg><use href="#i-mug"/></svg>Mucho más que remeras</li>
+        <li><svg><use href="#i-heart"/></svg>Hecho para emprender</li>
+        <li><svg><use href="#i-coin"/></svg>Ganás en cada venta</li>
+      </ul>
+    </div>
+
+    <!-- 13. Preguntas frecuentes -->
+    <section class="section section-soft" id="preguntas-frecuentes">
+      <div class="container split faq-split">
+        <div class="split-copy">
+          <h2 class="section-title">Preguntas frecuentes</h2>
+          <p class="section-lead">Lo que más nos consultan antes de arrancar. ¿Te queda alguna duda? Escribinos y te ayudamos.</p>
+          <a class="btn btn-primary" href="contacto.html">Contactanos</a>
+        </div>
+        <div class="faq">
+          <details name="faq" id="faq-que-es">
+            <summary><svg><use href="#i-plus"/></svg>¿Qué es el print on demand?</summary>
+            <p>Es un modelo en el que cada producto se fabrica recién cuando alguien lo compra. No necesitás comprar mercadería por adelantado ni guardar stock: subís tu diseño, lo vendés y nosotros lo producimos.</p>
+          </details>
+          <details name="faq" id="faq-costo">
+            <summary><svg><use href="#i-plus"/></svg>¿Cuánto cuesta usar Printirol?</summary>
+            <p>Crear tu cuenta y usar el editor es gratis. Solo pagás la producción y el envío de cada pedido, cuando ya tenés la venta hecha.</p>
+          </details>
+          <details name="faq" id="faq-tiendanube">
+            <summary><svg><use href="#i-plus"/></svg>¿Necesito tener una Tiendanube?</summary>
+            <p>No es obligatorio. Tiendanube es la integración automática, pero también podés cargar pedidos a mano si vendés por Instagram, WhatsApp o Mercado Libre.</p>
+          </details>
+          <details name="faq" id="faq-envios">
+            <summary><svg><use href="#i-plus"/></svg>¿Cómo funcionan los envíos?</summary>
+            <p>Enviamos con OCA a domicilio a todo el país. Cada producto tiene un costo de envío fijo y, si el pedido trae varios, se cobra uno solo: el más alto. Si subís una etiqueta de Mercado Libre, el envío queda en $0.</p>
+          </details>
+          <details name="faq" id="faq-pagos">
+            <summary><svg><use href="#i-plus"/></svg>¿Cómo pago los pedidos?</summary>
+            <p>Con Mercado Pago, directamente desde la plataforma. Una vez pagado, el pedido pasa a producción.</p>
+          </details>
+          <details name="faq" id="faq-muestra">
+            <summary><svg><use href="#i-plus"/></svg>¿Puedo pedir una muestra?</summary>
+            <p>Sí. Tenés un 20% de descuento en la producción de hasta 3 productos (una unidad de cada uno). El beneficio se usa una sola vez por cuenta.</p>
+          </details>
+          <details name="faq" id="faq-pedidos">
+            <summary><svg><use href="#i-plus"/></svg>¿Cómo sigo el estado de mis pedidos?</summary>
+            <p>Desde tu panel ves cada pedido como Borrador, En producción o Enviado. Cuando se despacha te llega un mail, y si vino de Tiendanube el seguimiento se carga en tu tienda.</p>
+          </details>
+          <details name="faq" id="faq-archivos">
+            <summary><svg><use href="#i-plus"/></svg>¿Qué archivos puedo subir?</summary>
+            <p>Imágenes JPG, PNG, GIF o WEBP de hasta 20 MB. El editor te muestra la calidad de impresión según el tamaño que le des al diseño.</p>
+          </details>
         </div>
       </div>
     </section>
   </main>
 
   <div id="site-footer"></div>
-  <dialog class="modal" id="product-modal" aria-label="Detalle del producto"></dialog>
 
-  <script src="js/data.js?v=10"></script>
-  <script src="js/main.js?v=10"></script>
+
+  <script src="js/main.js?v=31"></script>
 </body>
 </html>
